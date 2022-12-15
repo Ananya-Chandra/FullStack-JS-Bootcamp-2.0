@@ -1,0 +1,30 @@
+/* * is global selector
+
+if we give two margin value then 1st one is for top & bottom, 2nd one is for left & right */
+
+
+
+/* *{
+    color: red;
+} */
+
+#pra {
+    color: aqua;
+}
+
+.para {
+    color: rgb(120, 23, 211);
+    /* border: 2px solid red; */
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+    padding: 40px;
+    margin: 100px;
+    height: 100px;
+    width: 400px;
+    background-color: rgb(215, 238, 113);
+    text-align: center;
+    text-decoration: underline;
+}
+

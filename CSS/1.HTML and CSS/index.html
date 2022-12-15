@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS</title>
+
+    <style>
+        /* Child selector */
+        /* div > p{
+            color: red;
+        } */
+        /* or */
+        div p {
+            color: red;
+        }
+
+
+        /* div , p{
+            color: red;
+        } */
+
+
+        /* Pseduo selector */
+        
+        .warning::before {
+            content: "Danger";
+            color: red;
+            font-size: 25px;
+        }
+
+        .quote::after {
+            content: "-Author";
+            color: gray;
+            font-size: 10px;
+        }
+        /* focus */
+        input:focus{
+            color: blueviolet;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, harum.</p>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, maxime.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, repellendus!</p>
+    </div>
+
+    <h1>Hello everyone</h1>
+    <p id="pra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi labore nisi ipsam voluptatum
+        mollitia nostrum
+        dolores. Atque, adipisci iure.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi labore nisi ipsam voluptatum
+        mollitia nostrum
+        dolores. Atque, adipisci iure.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi labore nisi ipsam voluptatum
+        mollitia nostrum
+        dolores. Atque, adipisci iure.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita quae a distinctio autem eveniet alias?
+        Odit debitis est id?</p>
+
+    <div class="warning">
+        <p>Please use the website carefully</p>
+    </div>
+
+    <div class="quote">
+        <p>Please use the website carefully</p>
+    </div>
+
+    Name:<input type="text">
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        a:hover {
+            background-color: #FF6263;
+            color: white;
+        }
+
+        a:visited {
+            color: #66AD47;
+            /* changes color after visitng the link */
+        }
+
+        a:link {
+            color: #62edff;
+            /* if not visited */
+        }
+        input:focus{
+            background-color: gray;
+            color: white;
+        }
+
+        li:nth-child(even){
+            background-color: #FF6263;
+            border: 2px dotted black;
+        }
+
+        li:first-child{
+            color: rgb(12, 109, 109);
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, recusandae!</p>
+    <a href="https://www.google.com/">Google</a><br>
+    <input type="text">Name <br>
+    <input type="password"> password <br>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>foue</li>
+        <li>five</li>
+        <li>six</li>
+        <li>seven</li>
+        <li>eight</li>
+        <li>nine</li>
+        <li>ten</li>
+    </ul>
+
+
+
+    <ul>
+        <li>fjdhvjkdfv</li>
+        <li>vfvvvvfsvfs</li>
+        <!-- inline css -->
+        <li style="color: rgb(255, 0, 212);">vfvsdfvfs</li>    
+        
+    </ul>
+</body>
+
+</html>

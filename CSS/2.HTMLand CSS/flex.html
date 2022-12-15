@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+
+        /* flex is applied to parent */
+        .container {
+            display: flex;
+            height: 500px;
+            border: 2px solid black;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            justify-content: center;
+            /* it aligns horizontally */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            align-items: center;
+            /* it aligns vertically; */
+            flex-wrap: wrap;
+            gap: 50px;
+            /* giving space in b/w */
+        }
+
+        .item {
+            border: 2px solid black;
+            background-color: aquamarine;
+            margin: 7px;
+            height: 50px;
+            width: 50px;
+        }
+
+        #flex{
+            flex-grow: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">one</div>
+        <div class="item" id="flex">two</div>
+        <div class="item">three</div>
+        <div class="item">four</div>
+    </div>
+</body>
+
+</html>

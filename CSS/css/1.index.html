@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* individual selector */
+        p {
+            color: red;
+        }
+
+        /* universal selector */
+        * {
+            padding: 20px;
+        }
+
+        /* class selector */
+        .warning {
+            background-color: aqua;
+        }
+
+        /* id selector */
+        #danger {
+            background-color: blueviolet;
+        }
+
+        /* and selector */
+        li.bg-pink.text-white {
+            background-color: skyblue;
+            color: white;
+        }
+
+        /* combine selector */
+        span,
+        li {
+            background-color: pink;
+        }
+
+        /* select inside an element */
+        div ul li {
+            border: 3px solid black;
+        }
+
+        /* direct child */
+        div>li {
+            background-color: rgb(185, 18, 190);
+        }
+
+        /* sibling */
+        .sibling+p {
+            background-color: rgb(30, 255, 0);
+        }
+        /* we can use ~ instead of  + */
+
+        
+
+        /* before */
+        /* .imp-label::before{
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            background-color: plum;
+        } */
+
+        /* hover effect */
+        .imp-label:hover::before{
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            background-color: plum;
+        }
+
+        .email:hover{
+            background-color: aquamarine;
+        }
+
+        .btn{
+            background-color: #6EC72D;
+            padding: 5px 3px;
+            /* padding: top-bot, left-rig; */
+            /* padding: top left bot -rig; */
+            border: 1px black solid;
+            border-radius: 5px;
+        }
+
+        .btn:hover{
+            background-color: white;
+            color: #6EC72D;
+            border: #6EC72D 2px solid;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <h1>g gf gffdgdfh</h1>
+    </div>
+    <span>This is a span</span>
+
+    <p id="danger">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsam ipsum animi error possimus
+        nulla. Aliquid
+        asperiores similique commodi impedit.</p>
+    <p class="warning">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam dignissimos consequatur debitis
+        doloribus neque
+        unde ipsa ipsam vero incidunt illum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eius odit dicta blanditiis cum sapiente esse,
+        fuga magni impedit repudiandae!</p>
+    <p class="sibling">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, deserunt doloremque aliquid
+        quidem ipsam laudantium ea neque commodi nulla impedit?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore quibusdam nesciunt aspernatur at dicta
+        repudiandae corrupti necessitatibus ipsam itaque laudantium?</p>
+
+    <ul>
+        <li class="bg-pink text-white"> No 1</li>
+        <li class="bg-pink"> No 2</li>
+        <li> No 3</li>
+        <li> No 4</li>
+    </ul>
+
+    <div>
+        <li>Awesome</li>
+        <ul>
+            <li>highligght me</li>
+            <li>highligght me</li>
+        </ul>
+    </div>
+    <div>
+        <form action="">
+            <label class="imp-label" for="name">name</label>
+            <input type="text" name="name">
+
+            <label class="email" for="email">email</label>
+            <input type="text" name="email">
+            <button class="btn" data-tooltip="Tooltip" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
