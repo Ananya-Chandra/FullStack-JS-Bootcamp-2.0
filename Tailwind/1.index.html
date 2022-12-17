@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-700 pt-5"> 
+    <!-- <div class="sm:text-center">Hitesh</div> text isn't in center less than if 640px -->
+    <!-- <div class="text-center sm:text-center">Hitesh</div> -->
+    <!-- text is in center if less than 640px -->
+
+    <div class="text-center md:text-left md:text-white">Hitesh</div> 
+    <!-- left for big screen, center for small screen -->
+    <button class="text-center px-8 py-3 drop-shadow-lg bg-white font-bold rounded-lg 
+    shadow-[2px_2px_2px_gray, -2px_-2px_2px_white] hover:scale-[1.3] transition-all ml-5">Click here</button>
+
+    <div>
+        <button class="bg-blue-500 text-white px-8 py-3 mt-4 ml-4 rounded-md hover:bg-white hover:text-blue-500">Click me</button>
+
+        <button class="bg-blue-500 text-white px-[100px]">Click</button>
+        <!-- writing own custom value -->
+    </div>
+    
+</body>
+</html>
